@@ -1,2 +1,2 @@
 const rootDiv = ReactDOM.createRoot(document.getElementById('root'));
-rootDiv.render("Hello world from CNSS");
+rootDiv.render(<h1>Hello world from CNSS</h1>);
