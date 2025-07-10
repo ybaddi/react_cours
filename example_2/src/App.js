@@ -5,10 +5,18 @@ import Hello from "./Hello";
 import { Header, Footer} from "./components"
 import MainContent from "./components"
 import { Fragment } from 'react/jsx-runtime';
+import WelcomObject from './WelcomObject';
+
 
 function App() {
+
+
   
- 
+ const obj = {
+  name: 'Baddi',
+  age: 24,
+  username: 'YB'
+ }
   return (
     <div className="App">
       {/* <Welcom name="ahmed" age="24">rabat</Welcom> */}
@@ -25,6 +33,10 @@ function App() {
         <Fragment key="boulvard">Qods</Fragment>
         <Fragment key="cp">145</Fragment>
       </Welcom>
+
+      <WelcomObject >
+        {obj}
+      </WelcomObject>
       
       <Hello name='adil' age='24'>Casablanca</Hello>
       
